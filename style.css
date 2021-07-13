@@ -1,0 +1,176 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    list-style: none;
+    text-decoration: none;
+}
+.container
+{
+    width: 1050px;
+    margin: auto;
+}
+.row
+{
+    display: flex;
+}
+/* banner section style */
+.banner_left {
+    width: 48%;
+    margin-right: 102px;
+}
+.banner_left h1 {
+    font-size: 64px;
+    color: #fff;
+}
+.banner_right
+{
+    width: 48%;
+}
+.banner_right img
+{
+    width: 100%;
+}
+
+.banner_section {
+    background: #2D25A0;
+    padding: 100px 0;
+}
+
+.banner_left a {
+    background: #E02C6D;
+    color: #fff;
+    padding: 10px 24px;
+    font-size: 16px;
+    font-weight: 300;
+    display: inline-block;
+    margin-top: 27px;
+}
+
+
+/* banner section style */
+
+/* player section style */
+.player_section {
+    padding: 70px 0;
+}
+.players
+{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 27px 30px;
+}
+.player {
+    padding: 15px;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+}
+.player_img img {
+    width: 100%;
+}
+
+.player_content h1 {
+    font-size: 28px;
+    margin: 10px 0;
+    color: #18191F;
+}
+
+.player_content p {
+    font-size: 16px;
+    color: #6C6C6C;
+}
+/* player section style */
+
+/* footer section style */
+.footers {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer_img img {
+    width: 60%;
+    margin-bottom: 20px;
+}
+
+.footer_img {
+    display: flex;
+    justify-content: center;
+}
+.social_icon ul li a {
+    margin-right: 16px;
+    width: 32px;
+    height: 32px;
+    display: flex;
+    color: #969BAB;
+    align-items: center;
+    background: #dddddd;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+.footer_section {
+    padding-bottom: 50px;
+}
+
+.social_icon {
+    margin-bottom: 40px;
+}
+/* footer section style */
+
+/* responsive css style */
+@media (max-width:768px) {
+    .container
+    {
+        width: 100%;
+        padding: 10px 20px;
+    }
+    .banner_section   .row 
+    {
+        flex-direction: column;
+    }
+    .banner_left {
+        width: 100%;
+        margin: 0;
+    }
+    .banner_right
+    {
+        width: 100%;
+        margin-top: 50px;
+    }
+    .players 
+    {
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+@media (max-width:688px) {
+    .container
+    {
+        width: 100%;
+        padding: 10px 20px;
+    }
+    .banner_section   .row 
+    {
+        flex-direction: column;
+    }
+    .banner_left {
+        width: 100%;
+        margin: 0;
+    }
+    .banner_right
+    {
+        width: 100%;
+        margin-top: 50px;
+    }
+    .banner_left h1 
+    {
+        font-size: 45px;
+    }
+    .players 
+    {
+        grid-template-columns: repeat(1,1fr);
+    }
+}

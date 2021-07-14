@@ -83,6 +83,41 @@
 }
 /* player section style */
 
+/* Highlights section style */
+.highlights_section {
+    padding: 30px 0;
+}
+.highligh_left {
+    width: 48%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin-right: 50px;
+}
+.highligh_left h1 {
+    font-size: 48px;
+    margin-bottom: 8px;
+}
+.highligh_left a {
+    background: #E02C6D;
+    color: #fff;
+    padding: 10px 24px;
+    font-size: 16px;
+    font-weight: 300;
+    display: inline-block;
+    margin-top: 27px;
+}
+.highligh_right {
+    width: 50%;
+}
+
+.highligh_right img {
+    width: 100%;
+}
+
+/* Highlights section style */
+
 /* footer section style */
 .footers {
     display: flex;
@@ -122,6 +157,43 @@
 /* footer section style */
 
 /* responsive css style */
+@media (max-width: 1024px) {
+    .container
+    {
+        width: 100%;
+        padding: 10px 20px;
+    }
+    .banner_section   .row 
+    {
+        flex-direction: column;
+    }
+    .banner_left {
+        width: 100%;
+        margin: 0;
+    }
+    .banner_right
+    {
+        width: 100%;
+        margin-top: 50px;
+    }
+    .players 
+    {
+        grid-template-columns: repeat(2,1fr);
+    }
+    .highlights_section .row {
+        flex-direction: column;
+    }
+    .highligh_left {
+        margin-bottom: 20px;
+        width: 100%;
+    }
+    .highligh_left h1{
+        font-size: 30px;
+    }
+    .highligh_right {
+        width: 100%;
+    }
+}
 @media (max-width:768px) {
     .container
     {
@@ -144,6 +216,19 @@
     .players 
     {
         grid-template-columns: repeat(2,1fr);
+    }
+    .highlights_section .row {
+        flex-direction: column;
+    }
+    .highligh_left {
+        margin-bottom: 20px;
+        width: 100%;
+    }
+    .highligh_left h1{
+        font-size: 30px;
+    }
+    .highligh_right {
+        width: 100%;
     }
 }
 @media (max-width:688px) {
@@ -172,5 +257,18 @@
     .players 
     {
         grid-template-columns: repeat(1,1fr);
+    }
+    .highlights_section .row {
+        flex-direction: column;
+    }
+    .highligh_left {
+        margin-bottom: 20px;
+        width: 100%;
+    }
+    .highligh_left h1{
+        font-size: 30px;
+    }
+    .highligh_right {
+        width: 100%;
     }
 }

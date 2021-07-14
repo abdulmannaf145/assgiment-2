@@ -29,11 +29,13 @@
 {
     width: 48%;
 }
-.banner_right img
-{
+.banner_right img {
     width: 100%;
+    transition: 0.5s;
 }
-
+.banner_right img:hover {
+    transform: skew(10deg, 10deg);
+}
 .banner_section {
     background: #2D25A0;
     padding: 100px 0;
@@ -47,6 +49,11 @@
     font-weight: 300;
     display: inline-block;
     margin-top: 27px;
+    transform: 0.5s;
+}
+.banner_left a:hover
+{
+    letter-spacing: 2px;
 }
 
 

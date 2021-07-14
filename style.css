@@ -83,6 +83,81 @@
 }
 /* player section style */
 
+/* fun section style */
+.fun_section {
+    padding: 35px 0;
+}
+.fun_section_title {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.fun_menu ul {
+    display: flex;
+    margin-top: 20px;
+}
+
+.fun_menu ul li a {
+    display: inline-block;
+    padding: 10px;
+    margin-right: 3px;
+    color: #ddd;
+    transition: 0.5s;
+    border: 2px solid #ddd;
+    text-transform: uppercase;
+}
+
+.fun_menu ul li a:hover {
+    border: 2px solid #111;
+    color: #111;
+}
+
+.fun_section_title h1 {
+    font-size: 45px;
+}
+.funs
+{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(1,1fr);
+    grid-gap: 0 30px;
+}
+.fun
+{
+    background-color: #fff;
+    box-shadow: 0px 0px 40px rgb(0 0 0 / 15%);
+    padding: 15px;
+    text-align: center;
+}
+.fun_img img
+{
+    width: 100%;
+}
+/* fun section style */
+
+/*  Our Sponsors style  */
+.our_sponsors_section {
+    padding: 30px  0;
+}
+.sponsors_title {
+    text-align: center;
+    margin-bottom: 40px;
+}
+.sponsors_title h1 {
+    font-size: 45px;
+}
+.soponsors_pictures {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 70px 10px;
+    text-align: center;
+}
+/*  Our Sponsors style  */
+
+
 /* Highlights section style */
 .highlights_section {
     padding: 30px 0;
@@ -230,6 +305,24 @@
     .highligh_right {
         width: 100%;
     }
+    .funs {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px 30px;
+    }
+    .soponsors_pictures {
+        grid-template-columns: repeat(2,1fr);
+    }
+    .fun_menu ul {
+	    display: flex;
+	    margin-top: 20px;
+	    flex-direction: column-reverse;
+    }
+    .fun_menu ul li a {
+	    width: 160px;
+	    height: 50px;
+	    text-align: center;
+        margin-bottom: 5px;
+    }
 }
 @media (max-width:688px) {
     .container
@@ -270,5 +363,24 @@
     }
     .highligh_right {
         width: 100%;
+    }
+    .funs {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 20px 30px;
+    }
+    .soponsors_pictures {
+        grid-template-columns: repeat(1,1fr);
+        grid-gap: 45px 0;
+    }
+    .fun_menu ul {
+	    display: flex;
+	    margin-top: 20px;
+	    flex-direction: column-reverse;
+    }
+    .fun_menu ul li a {
+	    width: 160px;
+	    height: 50px;
+	    text-align: center;
+        margin-bottom: 5px;
     }
 }
